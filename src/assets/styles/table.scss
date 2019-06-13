@@ -1,0 +1,147 @@
+$table-cell-padding-sm: .7rem !default;
+$table-dark-bg: #f6f6f6 !default;
+$table-dark-color:#6B6B6B !default;
+
+$table-striped-order: even !default;
+$table-accent-bg: rgba(238, 238, 238, 0.5);
+.table {
+    thead {
+        tr {
+            background-color: #F6F6F6;
+        }
+        th {
+            border-top:none;
+            color: #6B6B6B;
+            font-weight: 500;
+            border-bottom: 1px solid #D8D8D8 !important;
+            text-transform: capitalize;
+        }
+    }
+}
+i.pending {
+    background-color: #0177BD;
+}
+i.smart {
+    background-color: #6d1ed4;
+}
+i.denied {
+    background-color: #D32F2F;
+}
+i.approved {
+    background-color: #2F7D33;
+}
+.icon-status {
+    width: 14px;
+    height: 14px;
+    display: block;
+    border-radius: 14px;
+}
+.custom-select.items-per-page{
+    width: 60px;
+    margin-right: 10px;
+    height:28px;
+    border: solid 1px #808080;
+    line-height: 14px;
+}
+.table-footer { 
+    padding-top: 35px;
+}
+.pagify-pagination {
+    border-top:1px solid #CFCFCF;
+}
+
+.selectdiv {
+    position: relative;
+  }
+  
+  .selectdiv:after {
+      content: '\f078';
+      font: normal normal normal 17px/1 FontAwesome;
+      color: #fff;
+      width: 34px;
+      height: 34px;
+      right: 64px;
+        padding: 6px 6px 0px 8px;
+        position: absolute;
+        pointer-events: none;
+        background-color: #929292;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+		  border-top: solid 2px #808080;
+		  border-bottom: solid 2px #808080;
+		  border-right: solid 2px #808080;
+  }
+  
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    display: block;
+    color: #333;
+    width: 70px !important;
+    height: 34px;
+    background-color: #ffffff;
+    background-image: none;
+    -ms-word-break: normal;
+    word-break: normal;
+    border: solid 2px #808080;
+  }
+.table-viewing{
+	line-height: 35px;
+}
+.table-pagination {
+
+		
+
+    .page-item:first-child .btn-paginator, .page-item:last-child .btn-paginator  {
+        border-top-left-radius: 2px;
+        border-top-right-radius:2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .page-item:last-child .btn-paginator  {
+        margin-right: 0px;
+    }
+    .btn-paginator {
+        background-color: #929292;
+        color:#fff;
+        border-top-left-radius: 2px;
+        border-top-right-radius:2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-color:#929292;
+        width: 28px;
+        height: 28px;
+		  margin-right: 5px;
+		  padding: 0px;
+        span {
+            font-size: 25px;
+            font-weight: 100;
+            line-height: 18px;
+        }
+    }
+    .page-input {
+		max-width: 45px !important;
+    /* text-align: center; */
+    border: solid 1px #808080;
+    margin: 0;
+    height: 28px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+    }
+}

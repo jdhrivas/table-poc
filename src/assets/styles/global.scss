@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap);
+$font-family-base: Muli !default;
+$font-size-base: 0.8125rem;
+@import './table.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+body {
+    background-color: #f2f2f2;
+}
+.main{
+    background-color: #fff;
+    border-top:8px;
+    border-top-color: #455B66;
+    border-top-style: solid;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-top:10px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.page-title {
+    margin-bottom: 20px;
+}
+.page-content{
+    margin-bottom: 40px;
+}
+.metrics{
+    margin-bottom: 40px;
+}
+.tile {
+    width: 100%;
+    height: 200px;
+    border: solid 1px #ddd;
+    display: block;
+    border-radius: 2px;
+    padding: 5px;
+}
+.tile-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4A4A4A;
+    text-align: center;
+    padding-top: 10px;
+}
+.tile-icon {
+    background-color: rgba(1, 119, 189, 0.1);
+    width:42px;
+    height: 42px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    line-height: 40px;
+    color: #0177BD;
+    font-size:18px;
+}
+.tile-content{
+    padding-top: 20px;
+    h4 {
+        font-size: 45px;
+        font-weight: 700;
+        color:#4A4A4A;
+    }
+    .tile-amount{
+        color: #0177BD;
+        font-weight: 700;
+    }
+}
