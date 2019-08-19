@@ -97,8 +97,6 @@ i.approved {
 }
 .table-pagination {
 
-		
-
     .page-item:first-child .btn-paginator, .page-item:last-child .btn-paginator  {
         border-top-left-radius: 2px;
         border-top-right-radius:2px;
@@ -145,3 +143,19 @@ i.approved {
         -moz-appearance:textfield; /* Firefox */
     }
 }
+.toolbar {
+	nav{
+		border-top: solid 1px #cfcfcf;
+	}
+	.dropdown-toggle::after{
+		display: none;
+	}
+}
+
+.resize-handle {
+    outline: solid 1px black;
+    cursor: col-resize;
+    float: right;
+    width: 0;
+  }
+
